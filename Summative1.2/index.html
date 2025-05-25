@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested List Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, textarea {
+            width: 300px;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        textarea {
+            height: 120px;
+        }
+        .submit-btn {
+            padding: 8px 16px;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contact Form</h2>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Your Name*</label>
+                <ul>
+                    <li><input type="text" id="name" name="name" required></li>
+                </ul>
+            </li>
+            <li>
+                <label for="email">Email*</label>
+                <ul>
+                    <li><input type="email" id="email" name="email" required></li>
+                </ul>
+            </li>
+            <li>
+                <label for="contact">Contact No.*</label>
+                <ul>
+                    <li><input type="tel" id="contact" name="contact" required></li>
+                </ul>
+            </li>
+            <li>
+                <label for="message">Message</label>
+                <ul>
+                    <li><textarea id="message" name="message"></textarea></li>
+                </ul>
+            </li>
+            <li class="note">required field*</li>
+            <li><button type="submit" class="submit-btn">Send</button></li>
+        </ul>
+    </form>
+
+</body>
+</html>
